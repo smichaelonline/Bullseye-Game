@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+  
+  // state variable that will be changes when user clicks on button to show alert
   @State private var alertIsvisible: Bool = false
   @State private var sliderValue: Double = 50.0
+  @State private var game: Game = Game()
     
   var body: some View {
       VStack {
@@ -20,7 +22,7 @@ struct ContentView: View {
             .lineSpacing(4.0)
             .font(.footnote)
             .multilineTextAlignment(.center)
-        Text("89")
+        Text(String(game.target))
             .kerning(-1.0)
             .font(.largeTitle)
             .fontWeight(.black)
@@ -39,7 +41,8 @@ struct ContentView: View {
                 .alert("Hello there!", isPresented: $alertIsvisible) {
                     Button("Awesome!") { }
                 } message: {
-                    Text("This is my first pop-up")
+                  let roundedValue = Int(sliderValue.rounded())
+                  Text("The slider's value is \(roundedValue). \n" + "You scored \(self.game.points(sliderValue: roundedValue)) points this round")
                 }
             }
         }
