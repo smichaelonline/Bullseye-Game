@@ -8,7 +8,8 @@
 import Foundation
 
 struct Game {
-  var target: Int = 42
+  // target number that is displayed to user to try to get on the slider
+  var target: Int = Int.random(in: 1...100)
   var score: Int = 0
   var currentRound: Int = 1
   

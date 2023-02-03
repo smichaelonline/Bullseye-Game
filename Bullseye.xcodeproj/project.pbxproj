@@ -8,14 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		9B022606298CB50A008396CA /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B022605298CB50A008396CA /* Game.swift */; };
+		9B02260E298DB4B7008396CA /* BullseyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B02260D298DB4B7008396CA /* BullseyeTests.swift */; };
 		9B4022C5298C5DBB008F8028 /* BullseyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4022C4298C5DBB008F8028 /* BullseyeApp.swift */; };
 		9B4022C7298C5DBB008F8028 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4022C6298C5DBB008F8028 /* ContentView.swift */; };
 		9B4022C9298C5DBD008F8028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B4022C8298C5DBD008F8028 /* Assets.xcassets */; };
 		9B4022CC298C5DBD008F8028 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B4022CB298C5DBD008F8028 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9B02260F298DB4B7008396CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B4022B9298C5DBB008F8028 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B4022C0298C5DBB008F8028;
+			remoteInfo = Bullseye;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		9B022605298CB50A008396CA /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		9B02260B298DB4B6008396CA /* BullseyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BullseyeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B02260D298DB4B7008396CA /* BullseyeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeTests.swift; sourceTree = "<group>"; };
 		9B4022C1298C5DBB008F8028 /* Bullseye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4022C4298C5DBB008F8028 /* BullseyeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeApp.swift; sourceTree = "<group>"; };
 		9B4022C6298C5DBB008F8028 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,6 +37,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9B022608298DB4B6008396CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9B4022BE298C5DBB008F8028 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,10 +79,19 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		9B02260C298DB4B7008396CA /* BullseyeTests */ = {
+			isa = PBXGroup;
+			children = (
+				9B02260D298DB4B7008396CA /* BullseyeTests.swift */,
+			);
+			path = BullseyeTests;
+			sourceTree = "<group>";
+		};
 		9B4022B8298C5DBB008F8028 = {
 			isa = PBXGroup;
 			children = (
 				9B4022C3298C5DBB008F8028 /* Bullseye */,
+				9B02260C298DB4B7008396CA /* BullseyeTests */,
 				9B4022C2298C5DBB008F8028 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				9B4022C1298C5DBB008F8028 /* Bullseye.app */,
+				9B02260B298DB4B6008396CA /* BullseyeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +127,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9B02260A298DB4B6008396CA /* BullseyeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B022611298DB4B7008396CA /* Build configuration list for PBXNativeTarget "BullseyeTests" */;
+			buildPhases = (
+				9B022607298DB4B6008396CA /* Sources */,
+				9B022608298DB4B6008396CA /* Frameworks */,
+				9B022609298DB4B6008396CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B022610298DB4B7008396CA /* PBXTargetDependency */,
+			);
+			name = BullseyeTests;
+			productName = BullseyeTests;
+			productReference = 9B02260B298DB4B6008396CA /* BullseyeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		9B4022C0298C5DBB008F8028 /* Bullseye */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B4022CF298C5DBE008F8028 /* Build configuration list for PBXNativeTarget "Bullseye" */;
@@ -124,6 +172,10 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					9B02260A298DB4B6008396CA = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 9B4022C0298C5DBB008F8028;
+					};
 					9B4022C0298C5DBB008F8028 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -143,11 +195,19 @@
 			projectRoot = "";
 			targets = (
 				9B4022C0298C5DBB008F8028 /* Bullseye */,
+				9B02260A298DB4B6008396CA /* BullseyeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9B022609298DB4B6008396CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9B4022BF298C5DBB008F8028 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,6 +220,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9B022607298DB4B6008396CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B02260E298DB4B7008396CA /* BullseyeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9B4022BD298C5DBB008F8028 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -172,7 +240,59 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9B022610298DB4B7008396CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B4022C0298C5DBB008F8028 /* Bullseye */;
+			targetProxy = 9B02260F298DB4B7008396CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		9B022612298DB4B7008396CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7B8LH2Z386;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stephaniemichael.BullseyeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bullseye.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bullseye";
+			};
+			name = Debug;
+		};
+		9B022613298DB4B7008396CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7B8LH2Z386;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stephaniemichael.BullseyeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bullseye.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bullseye";
+			};
+			name = Release;
+		};
 		9B4022CD298C5DBD008F8028 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -348,6 +468,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9B022611298DB4B7008396CA /* Build configuration list for PBXNativeTarget "BullseyeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B022612298DB4B7008396CA /* Debug */,
+				9B022613298DB4B7008396CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9B4022BC298C5DBB008F8028 /* Build configuration list for PBXProject "Bullseye" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
