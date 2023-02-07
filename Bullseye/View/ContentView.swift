@@ -17,8 +17,7 @@ struct ContentView: View {
     
   var body: some View {
     ZStack {
-      Color("Background Color")
-        .edgesIgnoringSafeArea(.all)
+      BackgroundView(game: $game)
       VStack {
         // views are referenced below
         InstructionsView(game: $game)

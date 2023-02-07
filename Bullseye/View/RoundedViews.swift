@@ -39,19 +39,37 @@ struct RoundedImageViewFilled: View {
   }
 }
 
-struct PreviewView: View {
+struct RoundedRecTextView: View {
+  var text: String
+  
   var body: some View {
-    VStack {
-      RoundedImageViewStroked(systemName: "arrow.counterclockwise")
-      RoundedImageViewFilled(systemName: "list.dash")
+      Text(text)
+        .foregroundColor(Color("TextColor"))
+        .fontWeight(.black)
+        .kerning(-0.2)
+        .frame(width: 68, height: 56)
+        .font(.title3)
+        .overlay(
+          RoundedRectangle(cornerRadius: 21)
+            .stroke(Color("ButtonStrokeColor"), lineWidth: 2)
+        )
+  }
+  
+  struct PreviewView: View {
+    var body: some View {
+      VStack {
+        RoundedImageViewStroked(systemName: "arrow.counterclockwise")
+        RoundedImageViewFilled(systemName: "list.dash")
+        RoundedRecTextView(text: "100")
+      }
     }
   }
-}
-
-struct RoundedViews_Previews: PreviewProvider {
-  static var previews: some View {
-    PreviewView()
-    PreviewView()
-      .preferredColorScheme(.dark)
+  
+  struct RoundedViews_Previews: PreviewProvider {
+    static var previews: some View {
+      PreviewView()
+      PreviewView()
+        .preferredColorScheme(.dark)
+    }
   }
 }
